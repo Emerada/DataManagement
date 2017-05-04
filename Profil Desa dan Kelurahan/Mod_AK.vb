@@ -63,7 +63,7 @@ start2:
                     Dim curRowIndex As Integer = curDataGridViewRow.Index
 
                     If (curRowIndex >= maxRowIndex) Then
-                        MsgBox("Tidak ada data lagi")
+                    MsgBox("Tidak Ada Tersisa Lagi || Data Habis")
                         .Navigate("http://prodeskel.binapemdes.kemendagri.go.id/grid_ddk01/")
                         Exit Sub
                     Else
@@ -172,7 +172,7 @@ start2:
             Case "Kristen".ToUpper
                 GWB.Document.GetElementsByName("d032")(6).Click()
             Case Else
-                Throw New Exception(MsgBox("Agama " + Mod_Select.AGAMA + ", UnListed on Program !", MsgBoxStyle.Exclamation))
+                Throw New Exception(MsgBox("Agama " + Mod_Select.AGAMA + ", Tidak Masuk di Dalam Program ", MsgBoxStyle.Exclamation))
         End Select
     End Sub
 
@@ -260,7 +260,7 @@ start2:
             Case "Tidak tamat SD/sederajat"
                 GWB.Document.GetElementsByName("d036")(29).Click()
             Case Else
-                Throw New Exception(MsgBox("PDDK Akhir " + Mod_Select.PDDK_AKHIR + ", UnListed on Program !", MsgBoxStyle.Exclamation))
+                Throw New Exception(MsgBox("PDDK Akhir " + Mod_Select.PDDK_AKHIR + ", Tidak Masuk di Dalam Program", MsgBoxStyle.Exclamation))
         End Select
     End Sub
 
