@@ -1,3 +1,3 @@
 # DataManagement
 
-Just for reminder Original data removed from harddisk .
+Just for reminder if Original data gone .
