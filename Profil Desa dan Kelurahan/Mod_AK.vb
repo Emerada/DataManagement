@@ -104,9 +104,9 @@ start2:
 
     Private Sub JenisKelamin(ByVal GWB As GeckoWebBrowser)
         Select Case Mod_Select.JK
-            Case "LK".ToUpper
+            Case "LK".ToUpper, "LAKI-LAKI".ToUpper
                 GWB.Document.GetElementsByName("d026")(0).Click()
-            Case "PR".ToUpper
+            Case "PR".ToUpper, "PEREMPUAN".ToUpper
                 GWB.Document.GetElementsByName("d026")(1).Click()
             Case Else
                 Throw New Exception(MsgBox("Jenis Kelamin " + Mod_Select.JK + ", UnListed on Program !", MsgBoxStyle.Exclamation))
@@ -144,11 +144,11 @@ start2:
 
     Private Sub Status(ByVal GWB As GeckoWebBrowser)
         Select Case Mod_Select.STATUS
-            Case "Belum Kawin".ToUpper
+            Case "Belum Kawin".ToUpper, "BELUM".ToUpper
                 GWB.Document.GetElementsByName("d031")(0).Click()
             Case "Kawin".ToUpper
                 GWB.Document.GetElementsByName("d031")(1).Click()
-            Case "Cerai".ToUpper, "Cerai Hidup".ToUpper, "Cerai Mati".ToUpper
+            Case "Cerai".ToUpper, "Cerai Hidup".ToUpper, "Cerai Mati".ToUpper, "C.HIDUP".ToUpper, "C.MATI".ToUpper
                 GWB.Document.GetElementsByName("d031")(2).Click()
             Case Else
                 Throw New Exception(MsgBox("Status " + Mod_Select.STATUS + ", UnListed on Program !", MsgBoxStyle.Exclamation))
@@ -163,7 +163,7 @@ start2:
                 GWB.Document.GetElementsByName("d032")(1).Click()
             Case "Islam".ToUpper
                 GWB.Document.GetElementsByName("d032")(2).Click()
-            Case "Katholik".ToUpper
+            Case "Katholik".ToUpper, "KATHOLITK".ToUpper
                 GWB.Document.GetElementsByName("d032")(3).Click()
             Case "Lainnya".ToUpper
                 GWB.Document.GetElementsByName("d032")(4).Click()
@@ -223,23 +223,23 @@ start2:
                 GWB.Document.GetElementsByName("d036")(10).Click()
             Case "Tamat SD/Sederajat".ToUpper, "Tamat SD".ToUpper
                 GWB.Document.GetElementsByName("d036")(11).Click()
-            Case "Tamat SLTP/Sederajat", "SLTP"
+            Case "Tamat SLTP/Sederajat", "SLTP".ToUpper
                 GWB.Document.GetElementsByName("d036")(12).Click()
-            Case "Tamat SLTA/Sederajat", "SLTA"
+            Case "Tamat SLTA/Sederajat", "SLTA".ToUpper
                 GWB.Document.GetElementsByName("d036")(13).Click()
             Case "Tamat D-1 / sederajat"
                 GWB.Document.GetElementsByName("d036")(14).Click()
-            Case "Tamat D-2 / sederajat".ToUpper, "D I/II".ToUpper, "Diploma I/II".ToUpper
+            Case "Tamat D-2 / sederajat".ToUpper, "D I/II".ToUpper, "Diploma I/II".ToUpper, "D-I/II".ToUpper
                 GWB.Document.GetElementsByName("d036")(15).Click()
-            Case "D III".ToUpper, "Akademi/Diploma III/S.Muda".ToUpper, "Diploma III".ToUpper
+            Case "D III".ToUpper, "Akademi/Diploma III/S.Muda".ToUpper, "Diploma III".ToUpper, "D-III".ToUpper
                 GWB.Document.GetElementsByName("d036")(16).Click()
             Case "Tamat D-4 / sederajat"
                 GWB.Document.GetElementsByName("d036")(17).Click()
-            Case "D IV/ S I".ToUpper, "Diploma IV/Strata I".ToUpper
+            Case "D IV/ S I".ToUpper, "D-IV/S-I".ToUpper, "Diploma IV/Strata I".ToUpper
                 GWB.Document.GetElementsByName("d036")(18).Click()
-            Case "S II", "Strata II".ToUpper
+            Case "S II", "Strata II".ToUpper, "S-II".ToUpper
                 GWB.Document.GetElementsByName("d036")(19).Click()
-            Case "S III", "Strata III".ToUpper
+            Case "S III", "Strata III".ToUpper, "S-III".ToUpper
                 GWB.Document.GetElementsByName("d036")(20).Click()
             Case "Sedang SLB A/sederajat"
                 GWB.Document.GetElementsByName("d036")(21).Click()
@@ -253,11 +253,11 @@ start2:
                 GWB.Document.GetElementsByName("d036")(25).Click()
             Case "Tamat SLB C/sederajat"
                 GWB.Document.GetElementsByName("d036")(26).Click()
-            Case "Tdk/ Blm Sekolah".ToUpper, "Tidak/Belum Sekolah".ToUpper
+            Case "Tdk/ Blm Sekolah".ToUpper, "Tidak/Belum Sekolah".ToUpper, "Tdk/Blm Sekolah".ToUpper
                 GWB.Document.GetElementsByName("d036")(27).Click()
             Case "Tidak dapat membaca dan menulis huruf Latin/Arab"
                 GWB.Document.GetElementsByName("d036")(28).Click()
-            Case "Tidak tamat SD/sederajat"
+            Case "Tidak tamat SD/sederajat", "Blm Tamat SD".ToUpper
                 GWB.Document.GetElementsByName("d036")(29).Click()
             Case Else
                 Throw New Exception(MsgBox("PDDK Akhir " + Mod_Select.PDDK_AKHIR + ", Tidak Masuk di Dalam Program", MsgBoxStyle.Exclamation))
@@ -388,7 +388,7 @@ start2:
                 GWB.Document.GetElementsByName("d037")(59).Click()
             Case "Penyiar radio".ToUpper
                 GWB.Document.GetElementsByName("d037")(60).Click()
-            Case "Perangkat Desa"
+            Case "Perangkat Desa".ToUpper, "Perangkat Desa".ToUpper
                 GWB.Document.GetElementsByName("d037")(61).Click()
             Case "Perawat swasta".ToUpper, "Perawat".ToUpper
                 GWB.Document.GetElementsByName("d037")(62).Click()
@@ -434,7 +434,7 @@ start2:
                 GWB.Document.GetElementsByName("d037")(82).Click()
             Case "Tukang Kue"
                 GWB.Document.GetElementsByName("d037")(83).Click()
-            Case "Tukang Las/Pandai Besi".ToUpper
+            Case "Tukang Las/Pandai Besi".ToUpper, "Tukang Las".ToUpper
                 GWB.Document.GetElementsByName("d037")(84).Click()
             Case "Tukang Listrik".ToUpper
                 GWB.Document.GetElementsByName("d037")(85).Click()

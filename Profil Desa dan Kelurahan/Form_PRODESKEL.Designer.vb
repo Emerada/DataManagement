@@ -36,8 +36,6 @@ Partial Class Form_PRODESKEL
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator()
         Me.TabControlToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PingToolStripLabel = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
@@ -87,7 +85,7 @@ Partial Class Form_PRODESKEL
         'ToolStrip1
         '
         Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripDropDownButton, Me.OpenToolStripButton, Me.SettingToolStripDropDownButton, Me.PingToolStripLabel, Me.ToolStripLabel2, Me.ToolStripSeparator1, Me.ToolStripButton3, Me.ToolStripButton1, Me.ToolStripButton5, Me.ToolStripButton2, Me.ToolStripButton4})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripDropDownButton, Me.OpenToolStripButton, Me.SettingToolStripDropDownButton, Me.ToolStripSeparator1, Me.ToolStripButton3, Me.ToolStripButton1, Me.ToolStripButton5, Me.ToolStripButton2, Me.ToolStripButton4})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 1, 0)
@@ -151,41 +149,27 @@ Partial Class Form_PRODESKEL
         '
         Me.UserToolStripMenuItem.Image = CType(resources.GetObject("UserToolStripMenuItem.Image"), System.Drawing.Image)
         Me.UserToolStripMenuItem.Name = "UserToolStripMenuItem"
-        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.UserToolStripMenuItem.Text = "&User"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(134, 6)
         '
         'TabControlToolStripMenuItem
         '
         Me.TabControlToolStripMenuItem.Image = CType(resources.GetObject("TabControlToolStripMenuItem.Image"), System.Drawing.Image)
         Me.TabControlToolStripMenuItem.Name = "TabControlToolStripMenuItem"
-        Me.TabControlToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.TabControlToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.TabControlToolStripMenuItem.Text = "Tab Control"
         '
         'PingToolStripMenuItem
         '
         Me.PingToolStripMenuItem.Image = CType(resources.GetObject("PingToolStripMenuItem.Image"), System.Drawing.Image)
         Me.PingToolStripMenuItem.Name = "PingToolStripMenuItem"
-        Me.PingToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PingToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.PingToolStripMenuItem.Text = "Ping"
-        '
-        'PingToolStripLabel
-        '
-        Me.PingToolStripLabel.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.PingToolStripLabel.AutoSize = False
-        Me.PingToolStripLabel.Name = "PingToolStripLabel"
-        Me.PingToolStripLabel.Size = New System.Drawing.Size(50, 22)
-        '
-        'ToolStripLabel2
-        '
-        Me.ToolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(40, 22)
-        Me.ToolStripLabel2.Text = "Ping : "
         '
         'ToolStripSeparator1
         '
@@ -560,9 +544,7 @@ Partial Class Form_PRODESKEL
     Friend WithEvents ToolStripLabel7 As System.Windows.Forms.ToolStripLabel
     Friend WithEvents RowsAKToolStripLabel As System.Windows.Forms.ToolStripLabel
     Friend WithEvents ToolStripLabel9 As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents PingToolStripLabel As System.Windows.Forms.ToolStripLabel
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
-    Friend WithEvents ToolStripLabel2 As System.Windows.Forms.ToolStripLabel
     Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton4 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripButton2 As System.Windows.Forms.ToolStripButton

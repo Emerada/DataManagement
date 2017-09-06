@@ -17,8 +17,6 @@ Public Class Form_PRODESKEL
         Me.Text = App_Name
         TabControlToolStripMenuItem.CheckOnClick = True
         TabControlToolStripMenuItem.Checked = False
-        PingToolStripMenuItem.CheckOnClick = True
-        PingToolStripMenuItem.Checked = True
         Mod_Other.TabControl(TabControlToolStripMenuItem, SplitContainer1, TabControl1)
         LogOutToolStripMenuItem.Enabled = False
         TabControlToolStripMenuItem.Enabled = False
@@ -74,6 +72,7 @@ Public Class Form_PRODESKEL
         Else
             'Do Nothing
         End If
+        GWB.Navigate("http://prodeskel.binapemdes.kemendagri.go.id/grid_ddk01/")
     End Sub
 
     Private Sub DGV_KK_DoubleClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles DGV_KK.DoubleClick
@@ -97,7 +96,7 @@ Public Class Form_PRODESKEL
         Me.Text = App_Name + " | " + GWB.DocumentTitle
         complete = True
 
-        If GWB.DocumentTitle = "Prodeskel PMD" Then
+        If GWB.DocumentTitle = "Prodeskel Bina Pemdes" Then
             LogInToolStripMenuItem.Enabled = True
             LogOutToolStripMenuItem.Enabled = False
             ToolStripButton1.Enabled = False
@@ -110,11 +109,6 @@ Public Class Form_PRODESKEL
             ToolStripButton5.Enabled = True
             GWB.Enabled = True
         End If
-    End Sub
-
-    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
-        Dim ping As New System.Net.NetworkInformation.Ping
-        PingToolStripLabel.Text = ping.Send("27.112.69.42").RoundtripTime.ToString() + " ms"
     End Sub
 
     Private Sub GWB_ProgressChanged(ByVal sender As Object, ByVal e As Gecko.GeckoProgressEventArgs) Handles GWB.ProgressChanged
@@ -201,9 +195,5 @@ Public Class Form_PRODESKEL
 
     Private Sub UserToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserToolStripMenuItem.Click
         Form_User.Show()
-    End Sub
-
-    Private Sub PingToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PingToolStripMenuItem.Click
-        Mod_Other.Ping(ToolStripLabel2, PingToolStripLabel, Timer1, PingToolStripMenuItem)
     End Sub
 End Class

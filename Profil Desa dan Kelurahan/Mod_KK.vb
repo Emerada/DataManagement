@@ -21,7 +21,7 @@ start2:
                         txtfind.Text = Mod_Select.NO_KK
 
                         .Document.GetElementsByName("kode_keluarga")(0).SetAttribute("value", Mod_Select.NO_KK)
-                        .Document.GetElementsByName("namakk")(0).SetAttribute("value", Mod_Select.NAMA_KEP)
+                        .Document.GetElementsByName("namakk")(0).SetAttribute("value", Mod_Select.NAMA_LGKP)
                         Dim alamatG As GeckoTextAreaElement
                         alamatG = New GeckoTextAreaElement(.Document.GetElementsByName("alamat")(0).DomObject)
                         alamatG.Value = Mod_Select.ALAMAT
